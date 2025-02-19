@@ -71,7 +71,6 @@ img {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-
 .scroll-btn:hover {
     transform: translateX(-50%) scale(1.2);
 }
