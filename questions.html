@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Component</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
+</head>
+<div id="navbar"></div>
+<body>
+    <section class="content">
+        <div class="text-container fade-in">
+            <h1>Questions</h1>
+            <p class="fade-in question">
+                <strong>Where did the components you observed do well in terms of usability and accessibility? How have you applied this to your design?</strong>
+            </p>
+            <p class="fade-in paragraph">From a usability and accessibility standpoint, the dropdown menu is designed to be easily located and clicked with a mouse. The options are intuitively arranged, allowing users to seamlessly hover and select their desired choice. To preserve this functionality, I maintained the existing design while incorporating an additional feature that enables users to return to the dropdown menu after selecting an option, facilitating multiple selections when needed.</p>
+        </div>
+        <button class="scroll-btn">↓</button>
+    </section>
+
+
+    <section class="content">
+        <div class="text-container fade-in">
+            <p class="fade-in question">
+                <strong>Are there accessibility considerations that were not addressed that you accounted for in your own design?</strong>
+            </p>
+            <p class="fade-in paragraph">A critical accessibility concern in the original design was the absence of a keyboard shortcut for accessing the workspaces menu. This limitation poses a challenge for users who rely on keyboard navigation instead of a mouse or trackpad. To address this, I introduced a keyboard shortcut, ensuring a more inclusive experience.</p>
+        </div>
+        <button class="scroll-btn">↓</button>
+    </section>
+
+    <section class="content">
+        <div class="text-container fade-in">
+            <p class="fade-in question">
+                <strong>How does the change you’ve made in your own design solve for a “mismatch” in our world?</strong>
+            </p>
+            <p class="fade-in paragraph">By implementing this enhancement, my design mitigates the "mismatch" between users’ needs and system limitations, allowing individuals who cannot use a mouse or trackpad to fully engage with the dropdown menu. Moreover, the addition of customizable shortcuts extends accessibility to voice command features, providing features for users who interact with their devices through alternative input methods to utilize the functionality seamlessly.</p>
+        </div>
+        <button class="scroll-btn">↓</button>
+    </section>
+
+    <section class="content">
+        <div class="text-container fade-in">
+            <p class="fade-in question">
+                <strong>Give two examples of how the accessibility/inaccessibility of those inputs or outputs could also impact users with impairments either positively or negatively, respectively.</strong>
+            </p>
+            <p class="fade-in paragraph">
+                One notable issue is that all dropdown menu options change color to indicate selection. This design choice poses a significant challenge for users with visual impairments, such as color blindness, as they may struggle to distinguish the selected option from the rest.
+            </p>
+            <p class="fade-in paragraph">
+                Additionally, for keyboard users, exiting the dropdown menu without making a selection is unnecessarily difficult. The menu remains open until an option is chosen or the user manually clicks outside of it, creating an inconvenient experience for those relying solely on keyboard navigation.
+            </p>
+        </div>
+        <button class="scroll-btn">↓</button>
+    </section>
+
+        <section class="content">
+        <div class="text-container fade-in">
+            <p class="fade-in question">
+                <strong>Between mouse, keyboard, touch/mobile, and screen reader users, which do you think are most commonly prioritized in the process of creating components? How might this impact the user experience?</strong>
+            </p>
+            <p class="fade-in paragraph">Across different input methods—mouse, keyboard, touch/mobile, and screen readers—it is evident that the design of these applications prioritizes mouse users. This imbalance negatively impacts the overall user experience, as individuals using alternative input methods face unnecessary obstacles when accessing key features.
+</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

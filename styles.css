@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+    background: white; 
+    position: relative;
+    padding-bottom: 80px;
+}
+
+h3 {
+    margin-top: 500px; 
+}
+
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 20px;
+}
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.text-container {
+    width: 70%;  
+    max-width: 600px; 
+    margin: 10px auto;
+    text-align: left;
+}
+
+.scroll-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+    animation: floatArrow 1.5s infinite ease-in-out;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+
+.scroll-btn:hover {
+    transform: translateX(-50%) scale(1.2);
+}
+
+@keyframes floatArrow {
+    0% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-5px); }
+    100% { transform: translateX(-50%) translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .text-container {
+        width: 90%;
+        max-width: 100%;
+    }
+}
+.paragraph {
+    overflow-wrap: break-word;
+    font-size: 1.2rem; 
+    line-height: 1.6; 
+    margin: 5px auto;
+}
+
+.question {
+    margin: 5px auto; 
+}
+
+/* Dropdown */ 
+
+.navbar {
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 100;
+    padding: 15px;
+
+}
+.dropbtn {
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    position: relative;
+    min-width: 150px;
+    z-index: 100;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+}
+
+
+.dropdown-content a {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
