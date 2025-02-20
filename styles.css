@@ -16,28 +16,35 @@ section {
     text-align: center;
     flex-direction: column;
     transition: all 0.5s ease-in-out;
-    background: white; 
     position: relative;
     padding-bottom: 80px;
 }
 
-h3 {
-    margin-top: 500px; 
+.content {
+    height: auto; 
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+    overflow: visible; 
+    margin-top: 20px;
 }
-
 
 body {
     font-family: 'Karla', sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1.8rem;
 }
 
 img {
-    max-width: 80%;
-    height: auto;
+    max-width: 100%;
+    max-height: 80vh; 
     margin-top: 20px;
+    display: block;
+    object-fit: contain; 
 }
-
 
 .fade-in {
     opacity: 0;
@@ -51,15 +58,23 @@ img {
 }
 
 .text-container {
-    width: 70%;  
+    width: 100%;  
+    max-width: 700px; 
+    margin: 8px auto;
+    text-align: left;
+}
+
+.title-container {
+    width: 100%;  
     max-width: 600px; 
     margin: 10px auto;
     text-align: left;
+    white-space: nowrap;
 }
 
 .scroll-btn {
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     background: none;
@@ -89,7 +104,7 @@ img {
 }
 .paragraph {
     overflow-wrap: break-word;
-    font-size: 1.2rem; 
+    font-size: 1.4rem; 
     line-height: 1.6; 
     margin: 5px auto;
 }
@@ -101,22 +116,27 @@ img {
 /* Dropdown */ 
 
 .navbar {
-    background-color: #ffffff;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
     z-index: 100;
     padding: 15px;
-
 }
+
+
 .dropbtn {
     color: rgb(0, 0, 0);
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    width: 300px;
+    width: 350px;
     font-family: 'Karla', sans-serif;
     font-size: 20px;
     background-color: #ffffff;
     text-align: center;
+    border: 1px solid #000000;
+    border-radius: 5px;
 }
 
 .dropdown {
@@ -128,13 +148,16 @@ img {
     display: none;
     position: absolute;
     top: 100%;
-    position: relative;
     min-width: 150px;
+    width: 350px;
     z-index: 100;
     text-align: center;
     font-family: 'Karla', sans-serif;
     font-size: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
 }
+
 
 
 .dropdown-content a {
